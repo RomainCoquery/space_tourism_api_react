@@ -1,0 +1,204 @@
+.page_title {
+    width: 76%;
+    margin-top: 6%;
+}
+
+.planet_body {
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.planet_content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.planet_description h2, p {
+    margin-bottom: 6%;
+    width: 80%;
+}
+
+.nav_bar_planet {
+    width: 46%;
+    margin-bottom: 6%;
+}
+
+.nav_bar_planet_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav_bar_planet_list button {
+    color: var(--purple);
+    position: relative;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav_bar_planet_list button.active {
+    color: var(--white);
+}
+
+.nav_bar_planet_list button::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    border-bottom: 0.4rem solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.nav_bar_planet_list button:hover::after {
+    border-color: var(--white);
+    opacity: 0.4;
+}
+
+.nav_bar_planet_list button.active::after {
+    border-color: var(--white);
+    opacity: 1;
+}
+
+.planet_travel {
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.planet_distance {
+    margin-right: 10%;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .page_title {
+        width: 90%;
+    }
+
+    .planet_body {
+        margin-top: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .planet_picture {
+        margin-left: 0%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .planet_picture img {
+        width: 30rem;
+        margin-bottom: 6%;
+    }
+
+    .planet_content {
+        width: 100%;
+        display: flex;
+    }
+
+    .navbar {
+        margin-left: 0%;
+        margin-top: 0%;
+        width: 100%;
+    }
+
+    .nav_bar_planet {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_bar_planet_list li {
+        margin-right: 20%;
+    }
+
+    .planet_description.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 3;
+    }
+
+    .planet_description h2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4%;
+    }
+
+    .planet_description p {
+        width: 68%;
+        margin-bottom: 4%;
+    }
+
+    .planet_travel {
+        width: 50%;
+        justify-content: space-between;
+        margin-top: 4%;
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .page_title {
+        width: 100%;
+        text-align: center;
+        letter-spacing: 0.2rem;
+        color: var(--white);
+        margin-bottom: 6%;
+        
+    }
+
+    .page_title strong {
+        opacity: 0.5;
+    }
+
+    .planet_picture img {
+        width: 17rem;
+    }
+    
+    .nav_bar_planet {
+        width: 80%;
+    }
+
+    .planet_description p {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 6%;
+    }
+
+    .planet_travel {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .line_planet {
+        width: 90%;
+    }
+
+    .line_planet img{
+        max-width: 100%;
+    }
+
+    .planet_distance {
+        margin-right: 0;
+        margin-bottom: 12%;
+    }
+}

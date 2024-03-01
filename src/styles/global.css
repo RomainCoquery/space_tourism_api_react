@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+
+:root {
+    --font-barlow-condensed: 'Barlow Condensed', sans-serif;
+    --font-barlow: 'Barlow', sans-serif;
+    --font-bellefair: 'Bellefair', serif;
+
+    --text-navigation: 1.6rem;
+    --text-corps: 1.8rem;
+    --text-subtitle-2: 1.4rem;
+    --text-subtitle-1: 2.8rem;
+    --text-title-5: 2.8rem;
+    --text-title-4: 3.2rem;
+    --text-title-3: 5.6rem;
+    --text-title-2: 10rem;
+    --text-title-1: 15rem;
+
+    --letter-spacing-small: 2.36px;
+    --letter-spacing-medium: 2.7px;
+    --letter-spacing-large: 4.72px;
+
+    --white: #FFFFFF;
+    --purple: #D0D6F9;
+    --blue: #0B0D17;
+
+    --font-weight-regular: font-weight: 400;
+}
+
+.title1 {
+    font-family: var(--font-bellefair);
+    font-size: var(--text-title-1);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+}
+
+.title2 {
+    font-family: var(--font-bellefair);
+    font-size: var(--text-title-2);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+}
+
+.title3 {
+    font-family: var(--font-bellefair);
+    font-size: var(--text-title-3);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+}
+
+.title4 {
+    font-family: var(--font-bellefair);
+    font-size: var(--text-title-4);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+}
+
+.title5 {
+    font-family: var(--font-bellefair);
+    font-size: var(--text-title-5);
+    letter-spacing: var(--letter-spacing-large);
+    color: var(--purple);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+}
+
+.subtitle1 {
+    font-family: var(--font-bellefair);
+    font-size: var(--text-subtitle-1);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+    list-style-type: none;
+}
+
+.subtitle2 {
+    font-family: var(--font-barlow-condensed);
+    font-size: var(--text-subtitle-2);
+    letter-spacing: var(--letter-spacing-small);
+    color: var(--purple);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+    list-style-type: none;
+}
+
+.navigation {
+    font-family: var(--font-barlow-condensed);
+    font-size: var(--text-navigation);
+    letter-spacing: var(--letter-spacing-medium);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+    list-style-type: none;
+}
+
+.body {
+    font-family: var(--font-barlow);
+    font-size: var(--text-corps);
+    color: var(--purple);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.home {
+    background-image: url("../img/background_home.jpg");
+}
+
+.destination {
+    background-image: url("../img/background_planet.jpg");
+}
+
+.crew {
+    background-image: url("../img/background_crew.jpg");
+}
+
+.technology {
+    background-image: url("../img/background_technology.jpg");
+}
+
+@media only screen and (max-width: 900px) {
+
+    /* ajustement de la taille de police des éléments à 70% de la version desktop */
+
+    :root {
+        --text-navigation: 1.4rem;
+        --text-corps: 1.6rem;
+        --text-subtitle-2: 1.4rem;
+        --text-subtitle-1: 2.8rem;
+        --text-title-5: 2rem;
+        --text-title-4: 3.2rem;
+        --text-title-3: 5.6rem;
+        --text-title-2: 8rem;
+        --text-title-1: 10.5rem;
+    }
+
+    .title1 {
+        font-size: var(--text-title-1);
+    }
+    
+    .title2 {
+        font-size: var(--text-title-2);
+    }
+    
+    .title3 {
+        font-size: var(--text-title-3);
+    }
+    
+    .title4 {
+        font-size: var(--text-title-4);
+    }
+    
+    .title5 {
+        font-size: var(--text-title-5);
+    }
+
+    .subtitle1 {
+        font-size: var(--text-subtitle-1);
+    }
+    
+    .subtitle2 {
+        font-size: var(--text-subtitle-2);
+    }
+    
+    .navigation {
+        font-size: var(--text-navigation);
+    }
+    
+    .body {
+        font-size: var(--text-corps);
+    }
+
+    .home {
+        background-image: url("../img/tablet_background_home.jpg");
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    /* ajustement de la taille de police des éléments à 70% de la version desktop */
+
+    :root {
+        --text-navigation: 1.4rem;
+        --text-corps: 1.4rem;
+        --text-subtitle-2: 1.4rem;
+        --text-subtitle-1: 2.8rem;
+        --text-title-5: 1.6rem;
+        --text-title-4: 1.6rem;
+        --text-title-3: 2.4rem;
+        --text-title-2: 8rem;
+        --text-title-1: 7.6rem;
+    }
+
+    .title1 {
+        font-size: var(--text-title-1);
+    }
+    
+    .title2 {
+        font-size: var(--text-title-2);
+    }
+    
+    .title3 {
+        font-size: var(--text-title-3);
+    }
+    
+    .title4 {
+        font-size: var(--text-title-4);
+    }
+    
+    .title5 {
+        font-size: var(--text-title-5);
+    }
+
+    .subtitle1 {
+        font-size: var(--text-subtitle-1);
+    }
+    
+    .subtitle2 {
+        font-size: var(--text-subtitle-2);
+    }
+    
+    .navigation {
+        font-size: var(--text-navigation);
+    }
+    
+    .body {
+        font-size: var(--text-corps);
+    }
+}
