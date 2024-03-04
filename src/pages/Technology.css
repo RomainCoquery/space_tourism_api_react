@@ -107,18 +107,6 @@
         justify-content: center;
     }
 
-    .rocket {
-        content: url("../img/tablet_rocket.jpg");
-    }
-
-    .launcher {
-        content: url("../img/tablet_launcher.jpg");
-    }
-
-    .capsule {
-        content: url("../img/tablet_capsule.jpg");
-    }
-
     .technology_picture {
         margin-left: 0%;
         display: flex;

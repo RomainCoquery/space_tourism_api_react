@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-let baseURL = 'http://localhost:8000/api';
+const baseURL = 'http://localhost:8000';
 
 const api = axios.create({
   baseURL,
@@ -36,5 +36,7 @@ export const get = async (url) => {
     throw new Error('Une erreur est survenue lors de la récupération des données');
   }
 };
+
+export { baseURL };
 
 export default api;
