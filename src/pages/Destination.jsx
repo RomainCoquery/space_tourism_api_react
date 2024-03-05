@@ -5,13 +5,13 @@ import decoration from '../img/decoration.png';
 import { useLang } from '../context/LangContext';
 import en from '../lang/en.json';
 import fr from '../lang/fr.json';
-import useNavigationClick from '../hooks/useNavigationClick'; // Import du hook
+import useNavigationClick from '../hooks/useNavigationClick';
 
 const Destination = () => {
     const [lang, setLang] = useLang();
     const texts = lang === 'en' ? en : fr;
     const [planets, setPlanets] = useState([]);
-    const [activePlanet, setActivePlanet] = useState(0); // État pour suivre l'indice de la planète active
+    const [activePlanet, setActivePlanet] = useState(0);
 
     useEffect(() => {
         const fetchPlanets = async () => {
@@ -26,7 +26,6 @@ const Destination = () => {
         fetchPlanets();
     }, []);
 
-    // Utilisation du hook useNavigationClick
     useNavigationClick((nameResult) => {
         const planetIndex = planets.findIndex(planet => planet.en_name === nameResult);
         setActivePlanet(planetIndex !== -1 ? planetIndex : 0);
@@ -34,9 +33,8 @@ const Destination = () => {
 
     document.body.className = 'destination';
     return (
-        <div className="page_body">
-            <h1 className="title5 page_title"><strong>01</strong> {texts.destinationH1}</h1>
-
+        <>
+            <h1 className="title5 planet_title"><strong>01</strong> {texts.destinationH1}</h1>
             <div className="planet_body main">
                 <div className="planet_picture picture">
                     {planets.map((planet, index) => (
@@ -82,7 +80,7 @@ const Destination = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

@@ -1,3 +1,9 @@
+.technology_title {
+    width: 76%;
+    margin-top: 6%;
+    margin-left: 12%;
+}
+
 .technology_body { 
     display: flex;
     flex-direction: row;

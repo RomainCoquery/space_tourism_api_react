@@ -8,13 +8,14 @@ import flagUsa from '../img/flag-usa.jpg';
 import flagFrance from '../img/flag-france.jpg';
 import en from '../lang/en.json';
 import fr from '../lang/fr.json';
+import useHamburgerClick from '../hooks/useHamburgerClick';
 
 const Header = () => {
   const location = useLocation();
   const activeLink = location.pathname;
   const [lang, setLang] = useLang();
   const texts = lang === 'en' ? en : fr;
-
+  const isOpen = useHamburgerClick();
 
   const handleChangeLang = (newLang) => {
     setLang(newLang);
@@ -30,13 +31,13 @@ const Header = () => {
         <img src={decoration} alt="Decoration" />
       </div>
 
-      <div id="hamburger">
+      <div id="hamburger" className={isOpen ? 'open' : ''}>
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      <nav id="menu" className="nav_top navigation">
+      <nav id="menu" className={`nav_top navigation ${isOpen ? 'overlay' : ''}`}>
         <div className="language-selector">
           <button onClick={() => handleChangeLang('en')}>
             <img src={flagUsa} alt="English" />
