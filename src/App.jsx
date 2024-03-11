@@ -14,6 +14,8 @@ import Dashboard from './backoffice/Home';
 import DestinationIndex from './backoffice/destinations/DestinationsIndex';
 import DestinationShow from './backoffice/destinations/DestinationsShow';
 import DestinationsDelete from './backoffice/destinations/DestinationsDelete';
+import DestinationsEdit from './backoffice/destinations/DestinationsEdit';
+import DestinationsCreate from './backoffice/destinations/DestinationsCreate';
 
 
 const App = () => {
@@ -35,6 +37,8 @@ const App = () => {
             <Route path="/destinations/index" element={<DestinationIndex />} />
             <Route path="/destinations/show/:id" element={<DestinationShow />} />
             <Route path="/destinations/delete/:id" element={<DestinationsDelete />} />
+            <Route path="/destinations/edit/:id" element={<DestinationsEdit />} />
+            <Route path="/destinations/create" element={<DestinationsCreate />} />
 
           </Routes>
         </Router>

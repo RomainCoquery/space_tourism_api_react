@@ -32,7 +32,7 @@ const DestinationIndex = () => {
         <div className="card mb-4 bg-secondary bg-gradient">
           <div className="card-body">
             <h2 className="card-title">Ajouter une planète</h2>
-            <Link to="/destinations/add" className="btn btn-success btn-sm">Ajouter</Link>
+            <Link to="/destinations/create" className="btn btn-success btn-sm">Ajouter</Link>
           </div>
         </div>
 

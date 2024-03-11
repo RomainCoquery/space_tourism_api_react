@@ -32,7 +32,7 @@ const ConfirmationDeletePlanet = () => {
         >
           <button className="bg-danger" type="submit">Confirmer la suppression</button>
         </form>
-        <a href="/destination/index">Revenir à l'index</a>
+        <a href="/destinations/index">Revenir à l'index</a>
       </div>
     </Layout>
   );

@@ -94,24 +94,13 @@ export const get = async (url) => {
 };
 
 // Fonction pour envoyer une requête POST
-export const post = async (url, data) => {
+export const post = async (url, data, headers) => {
   try {
-    const response = await api.post(baseURL + url, data); // Concaténer le baseURL avec l'URL relative
+    const response = await api.post(baseURL + url, data, headers); // Concaténer le baseURL avec l'URL relative
     return response.data;
   } catch (error) {
     handleError(error);
     throw new Error('Une erreur est survenue lors de l\'envoi des données');
-  }
-};
-
-// Fonction pour envoyer une requête PUT
-export const put = async (url, data) => {
-  try {
-    const response = await api.put(baseURL + url, data); // Concaténer le baseURL avec l'URL relative
-    return response.data;
-  } catch (error) {
-    handleError(error);
-    throw new Error('Une erreur est survenue lors de la mise à jour des données');
   }
 };
 
