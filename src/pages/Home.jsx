@@ -18,7 +18,7 @@ const Home = () => {
             </div>
 
             <div className="home_body_button circle">
-                <a href="/destinations">{texts.homeButton}</a>
+                <a href="/destination">{texts.homeButton}</a>
             </div>
         </div>
     );

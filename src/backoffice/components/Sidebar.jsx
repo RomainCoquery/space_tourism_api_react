@@ -13,10 +13,10 @@ const Sidebar = () => {
       </div>
 
       <ul className="list-unstyled components">
-        <li className="mb-4"><Link to="/dashboard">Dashboard</Link></li>
-        <li className="mb-4"><Link to="/destinations/index">Backoffice Destination</Link></li>
-        <li className="mb-4"><Link to="/crews/index">Backoffice Crew</Link></li>
-        <li className="mb-4"><Link to="/technologies/index">Backoffice Technology</Link></li>
+        <li className="mb-4"><Link to="/back/dashboard">Dashboard</Link></li>
+        <li className="mb-4"><Link to="/back/destinations/index">Backoffice Destination</Link></li>
+        <li className="mb-4"><Link to="/back/crews/index">Backoffice Crew</Link></li>
+        <li className="mb-4"><Link to="/back/technologies/index">Backoffice Technology</Link></li>
 
         {user && (
           <li className="mb-4"><LogoutButton /></li>

@@ -49,22 +49,22 @@ const Header = () => {
 
         <ul className="nav_top_list navigation">
           <li>
-            <Link to="/" className={`navigation ${activeLink === '/' ? 'active' : ''}`}>
+            <Link to="" className={`navigation ${activeLink === '/' ? 'active' : ''}`}>
               <strong>00</strong> {texts.home}
             </Link>
           </li>
           <li>
-            <Link to="/destinations" className={`navigation ${activeLink === '/destinations' ? 'active' : ''}`}>
+            <Link to="/destination" className={`navigation ${activeLink === '/destinations' ? 'active' : ''}`}>
               <strong>01</strong> {texts.destination}
             </Link>
           </li>
           <li>
-            <Link to="/crews" className={`navigation ${activeLink === '/crews' ? 'active' : ''}`}>
+            <Link to="/crew" className={`navigation ${activeLink === '/crews' ? 'active' : ''}`}>
               <strong>02</strong> {texts.crew}
             </Link>
           </li>
           <li>
-            <Link to="/technologies" className={`navigation ${activeLink === '/technologies' ? 'active' : ''}`}>
+            <Link to="/technology" className={`navigation ${activeLink === '/technologies' ? 'active' : ''}`}>
               <strong>03</strong> {texts.technology}
             </Link>
           </li>

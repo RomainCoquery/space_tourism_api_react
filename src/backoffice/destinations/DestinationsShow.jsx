@@ -59,9 +59,9 @@ const DestinationShow = () => {
             </div>
 
             <div className="btn-group" role="group" aria-label="Actions">
-              <Link to={`/destinations/index`} className="btn btn-info btn-sm">Index</Link>
-              <Link to={`/destinations/edit/${planet.id}`} className="btn btn-warning btn-sm">Éditer</Link>
-              <Link to={`/destinations/delete/${planet.id}`} className="btn btn-danger btn-sm">Supprimer</Link>
+              <Link to={`/back/destinations/index`} className="btn btn-info btn-sm">Index</Link>
+              <Link to={`/back/destinations/edit/${planet.id}`} className="btn btn-warning btn-sm">Éditer</Link>
+              <Link to={`/back/destinations/delete/${planet.id}`} className="btn btn-danger btn-sm">Supprimer</Link>
             </div>
           </div>
         </div>

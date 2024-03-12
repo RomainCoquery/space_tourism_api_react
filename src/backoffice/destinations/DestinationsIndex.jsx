@@ -32,7 +32,7 @@ const DestinationIndex = () => {
         <div className="card mb-4 bg-secondary bg-gradient">
           <div className="card-body">
             <h2 className="card-title">Ajouter une planète</h2>
-            <Link to="/destinations/create" className="btn btn-success btn-sm">Ajouter</Link>
+            <Link to="/back/destinations/create" className="btn btn-success btn-sm">Ajouter</Link>
           </div>
         </div>
 
@@ -83,9 +83,9 @@ const DestinationIndex = () => {
                 </div>
 
                 <div className="btn-group" role="group" aria-label="Actions">
-                  <Link to={`/destinations/show/${planet.id}`} className="btn btn-info btn-sm">Voir</Link>
-                  <Link to={`/destinations/edit/${planet.id}`} className="btn btn-warning btn-sm">Éditer</Link>
-                  <Link to={`/destinations/delete/${planet.id}`} className="btn btn-danger btn-sm">Supprimer</Link>
+                  <Link to={`/back/destinations/show/${planet.id}`} className="btn btn-info btn-sm">Voir</Link>
+                  <Link to={`/back/destinations/edit/${planet.id}`} className="btn btn-warning btn-sm">Éditer</Link>
+                  <Link to={`/back/destinations/delete/${planet.id}`} className="btn btn-danger btn-sm">Supprimer</Link>
                 </div>
               </div>
             ))}

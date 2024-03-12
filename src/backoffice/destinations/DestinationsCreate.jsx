@@ -16,7 +16,6 @@ const DestinationsCreate = () => {
         picture: null,
     });
 
-    const [imageFile, setImageFile] = useState(null);
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
@@ -114,6 +113,7 @@ const DestinationsCreate = () => {
                     </div>
                     <button type="submit" className="btn btn-primary">Ajouter la planète</button>
                 </form>
+                <a href="/back/destinations/index">Revenir à l'index</a>
             </div>
         </Layout>
     );

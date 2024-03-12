@@ -60,7 +60,6 @@ const DestinationsEdit = () => {
 
             await post(`/api/destinations/${id}`, formData, { headers: { 'Content-Type': 'multipart/form-data' } });
             setSuccessMessage('La planète a été modifiée avec succès !');
-            console.log('Planète mise à jour avec succès !');
         } catch (error) {
             console.error('Erreur lors de la mise à jour de la planète:', error);
         }
@@ -114,7 +113,7 @@ const DestinationsEdit = () => {
                     </div>
                     <button type="submit" className="btn btn-primary">Modifier la planète</button>
                 </form>
-                <a href="/destinations/index">Revenir à l'index</a>
+                <a href="/back/destinations/index">Revenir à l'index</a>
             </div>
         </Layout>
     );

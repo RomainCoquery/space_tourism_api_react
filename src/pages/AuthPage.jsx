@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import LogoutButton from '../backoffice/components/LogoutButton';
 
 const AuthPage = ({ type }) => {
-  const navigate = useNavigate();
   const { register, login } = useAuth();
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
 
@@ -18,12 +16,11 @@ const AuthPage = ({ type }) => {
     try {
       if (type === 'register') {
         await register(formData);
-        navigate('/dashboard');
+        window.location.href= '/back/dashboard';
       } else if (type === 'login') {
         await login(formData);
+        window.location.href= '/back/dashboard';
       }
-      // Rediriger l'utilisateur vers une page appropriée après l'action
-      navigate('/dashboard');
     } catch (error) {
       console.error('Error:', error);
       // Gérer les erreurs d'inscription ou de connexion
