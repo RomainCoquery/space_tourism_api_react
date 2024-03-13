@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { get } from '../../api';
 
-const DestinationIndex = () => {
+const DestinationsIndex = () => {
   const [planets, setPlanets] = useState([]);
 
   useEffect(() => {
@@ -96,4 +96,4 @@ const DestinationIndex = () => {
   );
 };
 
-export default DestinationIndex;
+export default DestinationsIndex;

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { baseURL, get } from '../../api';
 
-const DestinationShow = () => {
+const DestinationsShow = () => {
   const [planet, setPlanet] = useState([]);
   const { id } = useParams();
 
@@ -55,7 +55,7 @@ const DestinationShow = () => {
             </div>
             <div className="mb-3">
               <strong>Image :</strong><br />
-              <img src={`${baseURL}/${planet.picture}`} alt={planet.name} style={{ maxWidth: '300px' }} />
+              <img src={`${baseURL}/${planet.picture}`} alt={planet.en_name} style={{ maxWidth: '300px' }} />
             </div>
 
             <div className="btn-group" role="group" aria-label="Actions">
@@ -70,4 +70,4 @@ const DestinationShow = () => {
   );
 };
 
-export default DestinationShow;
+export default DestinationsShow;

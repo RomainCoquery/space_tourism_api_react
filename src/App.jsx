@@ -11,12 +11,21 @@ import Technology from './pages/Technology';
 import AuthPage from './pages/AuthPage';
 import LogoutButton from './backoffice/components/LogoutButton'
 import Dashboard from './backoffice/Home';
-import DestinationIndex from './backoffice/destinations/DestinationsIndex';
-import DestinationShow from './backoffice/destinations/DestinationsShow';
-import DestinationsDelete from './backoffice/destinations/DestinationsDelete';
-import DestinationsEdit from './backoffice/destinations/DestinationsEdit';
+import DestinationsIndex from './backoffice/destinations/DestinationsIndex';
 import DestinationsCreate from './backoffice/destinations/DestinationsCreate';
-
+import DestinationsShow from './backoffice/destinations/DestinationsShow';
+import DestinationsEdit from './backoffice/destinations/DestinationsEdit';
+import DestinationsDelete from './backoffice/destinations/DestinationsDelete';
+import CrewsIndex from './backoffice/crews/CrewsIndex';
+import CrewsCreate from './backoffice/crews/CrewsCreate';
+import CrewsShow from './backoffice/crews/CrewsShow';
+import CrewsEdit from './backoffice/crews/CrewsEdit';
+import CrewsDelete from './backoffice/crews/CrewsDelete';
+import TechnologiesIndex from './backoffice/technologies/TechnologiesIndex';
+import TechnologiesCreate from './backoffice/technologies/TechnologiesCreate';
+import TechnologiesShow from './backoffice/technologies/TechnologiesShow';
+import TechnologiesEdit from './backoffice/technologies/TechnologiesEdit';
+import TechnologiesDelete from './backoffice/technologies/TechnologiesDelete';
 
 const PublicRoutes = () => (
   <AuthProvider>
@@ -63,11 +72,21 @@ const PrivateRoutes = () => {
     <Routes>
       <Route path="api/logout" element={<LogoutButton />} />
       <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/destinations/index" element={<DestinationIndex />} />
-      <Route path="/destinations/show/:id" element={<DestinationShow />} />
-      <Route path="/destinations/delete/:id" element={<DestinationsDelete />} />
-      <Route path="/destinations/edit/:id" element={<DestinationsEdit />} />
+      <Route path="/destinations/index" element={<DestinationsIndex />} />
       <Route path="/destinations/create" element={<DestinationsCreate />} />
+      <Route path="/destinations/show/:id" element={<DestinationsShow />} />
+      <Route path="/destinations/edit/:id" element={<DestinationsEdit />} />
+      <Route path="/destinations/delete/:id" element={<DestinationsDelete />} />
+      <Route path="/crews/index" element={<CrewsIndex />} />
+      <Route path="/crews/create" element={<CrewsCreate />} />
+      <Route path="/crews/show/:id" element={<CrewsShow />} />
+      <Route path="/crews/edit/:id" element={<CrewsEdit />} />
+      <Route path="/crews/delete/:id" element={<CrewsDelete />} />
+      <Route path="/technologies/index" element={<TechnologiesIndex />} />
+      <Route path="/technologies/create" element={<TechnologiesCreate />} />
+      <Route path="/technologies/show/:id" element={<TechnologiesShow />} />
+      <Route path="/technologies/edit/:id" element={<TechnologiesEdit />} />
+      <Route path="/technologies/delete/:id" element={<TechnologiesDelete />} />
       <Route path="/*" element={<PublicRoutes />} />
     </Routes>
   );
