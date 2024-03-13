@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
       setAccessToken(response.data.data.access_token);
       setHeaders(response.headers);
       localStorage.setItem('user', JSON.stringify(response.data.data.user));
-      localStorage.setItem('access_token', response.data.data.access_token);
+      localStorage.setItem('access_token', JSON.stringify(response.data.data.access_token));
     } catch (error) {
       console.error('Error registering user:', error);
       throw new Error('Failed to register user');

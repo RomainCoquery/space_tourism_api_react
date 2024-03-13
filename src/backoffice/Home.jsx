@@ -12,7 +12,7 @@ const Dashboard = () => {
         <h1>Bienvenue dans le tableau de bord</h1>
         {/* Autres composants spécifiques au tableau de bord */}
         {user && (
-          <p className="mb-4"><LogoutButton /></p>
+          <div className="mb-4"><LogoutButton /></div>
         )}
       </div>
     </Layout>
